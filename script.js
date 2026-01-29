@@ -24,18 +24,22 @@ function verificar(){
                 img.setAttribute('src','Adulto-homem.jpg')
             } else {
                 //idoso
-                img.setAttribute('src', 'Velha-mulher.jpg')
+                img.setAttribute('src', 'Velho-homem.jpg')
             }
         } else if (fsex[1].checked){
             genero= 'mulher'
             if(idade >=0 && idade < 10){
                 // bebe
+                img.setAttribute('src', 'Bebe-mulher.jpg')
             } else if (idade < 21){
                 //jovem
+                img.setAttribute('src', 'Jovem-mulher.jpg')
             } else if (idade < 50){
                 //adulto
+                img.setAttribute('src', 'Adulto-mulher.jpg')
             } else {
                 //idoso
+                img.setAttribute('src', 'Velha-mulher.jpg')
             }
         }
         res.style.textAlign = 'center'
